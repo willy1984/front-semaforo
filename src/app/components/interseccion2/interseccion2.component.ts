@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-interseccion2',
@@ -7,9 +8,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Interseccion2Component implements OnInit {
 
-  constructor() { }
+  tiempo = 0;
+  temporizador: any;
+
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
+    this.tomarTiempo();
+  }
+
+  tomarTiempo() {
+    this.temporizador = setInterval(() => {
+      this.tiempo = this.tiempo + 1
+      console.log(this.tiempo)
+      if (this.tiempo === 90) {
+        this.tiempo = 0;
+        this.tomarTiempo;
+      }
+    }, 1000); 
+  }
+
+  volver() {
+    this.route.navigateByUrl(`/home`);
+  }
+  ngOnDestroy(): void {
+    clearInterval(this.temporizador);    
   }
 
 }

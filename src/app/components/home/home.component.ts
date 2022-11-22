@@ -21,9 +21,6 @@ export class HomeComponent implements OnInit {
       case 2:                
       this.router.navigateByUrl('/interseccion2');
         break;
-      case 3:                
-      this.router.navigateByUrl('/interseccion3');
-        break;
     }
   } 
 
