@@ -24,4 +24,8 @@ export class HomeComponent implements OnInit {
     }
   } 
 
+  onClick() {
+    alert('Ves que si funcionoooooo ************');
+  }
+
 }

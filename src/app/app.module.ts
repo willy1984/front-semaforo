@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { Interseccion2Component } from './components/interseccion2/interseccion2.component';
 import { Interseccion3Component } from './components/interseccion3/interseccion3.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // Material
 import { MatCardModule } from '@angular/material/card';
@@ -32,7 +33,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
