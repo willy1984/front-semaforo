@@ -40,6 +40,57 @@ body{
     border-right: 4px solid rgb(255, 255,255,0.6);
     top: 5%;
 }
+.luces-circulo4{
+    display: block;
+    width: 22.5px;
+    height: 22.5px;
+    border-radius: 50%;
+    background-color: rgb(0, 0,0,0.3);
+    position: relative;
+}
+.luces-circulo4::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255, 255,255,0.6);
+    top: 5%;
+}
+.luces-circulo91{
+    display: block;
+    width: 22.5px;
+    height: 22.5px;
+    border-radius: 50%;
+    background-color: rgb(0, 0,0,0.3);
+    position: relative;
+}
+.luces-circulo91::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255, 255,255,0.6);
+    top: 5%;
+}
+.luces-circulo22{
+    display: block;
+    width: 22.5px;
+    height: 22.5px;
+    border-radius: 50%;
+    background-color: rgb(0, 0,0,0.3);
+    position: relative;
+}
+.luces-circulo22::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-right: 4px solid rgb(255, 255,255,0.6);
+    top: 5%;
+}
 .red{
     background-color: #c0392b;
     box-shadow: 0 0 10px 1px #c0392b;
